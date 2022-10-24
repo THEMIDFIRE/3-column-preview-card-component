@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+body p {
+  color: rgba(255, 255, 255, 0.65);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+body h1 {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+container {
+  margin: 10% auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(160px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  border-radius: 12px;
+}
+
+container div {
+  padding: 12%;
+}
+
+container div .icon {
+  width: 22%;
+  margin-bottom: 18px;
+}
+
+container div .title {
+  margin-bottom: 19px;
+  text-transform: uppercase;
+}
+
+container div .description {
+  max-width: 93%;
+  line-height: 1.5;
+  font-size: .8em;
+  margin-bottom: 50px;
+}
+
+container div .more-info {
+  background-color: #f2f2f2;
+  padding: 8px 20px;
+  border: 2px solid #f2f2f2;
+  border-radius: 50px;
+  margin: 10px 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+container div .more-info:hover {
+  background-color: transparent;
+  color: #f2f2f2 !important;
+  cursor: pointer;
+}
+
+container div:nth-of-type(1) {
+  background-color: #e38826;
+  border-radius: 12px 0 0 12px;
+}
+
+container div:nth-of-type(1) .more-info {
+  color: #e38826;
+}
+
+container div:nth-of-type(2) {
+  background-color: #006970;
+}
+
+container div:nth-of-type(2) .more-info {
+  color: #006970;
+}
+
+container div:nth-of-type(3) {
+  background-color: #004241;
+  border-radius: 0 12px 12px 0;
+}
+
+container div:nth-of-type(3) .more-info {
+  color: #004241;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (max-width: 480px) {
+  container {
+    max-width: 65%;
+    margin: 1% auto;
+  }
+  container div:nth-of-type(1) {
+    border-radius: 12px 12px 0 0;
+  }
+  container div:nth-of-type(3) {
+    border-radius: 0 0 12px 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  container {
+    max-width: 80%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
