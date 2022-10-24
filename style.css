@@ -24,7 +24,7 @@ body h1 {
   font-family: "Big Shoulders Display", cursive;
 }
 
-container {
+#cards {
   margin: 10% auto;
   display: -ms-grid;
   display: grid;
@@ -33,28 +33,28 @@ container {
   border-radius: 12px;
 }
 
-container div {
+#cards div {
   padding: 12%;
 }
 
-container div .icon {
+#cards div .icon {
   width: 22%;
   margin-bottom: 18px;
 }
 
-container div .title {
+#cards div .title {
   margin-bottom: 19px;
   text-transform: uppercase;
 }
 
-container div .description {
+#cards div .description {
   max-width: 93%;
   line-height: 1.5;
   font-size: .8em;
   margin-bottom: 50px;
 }
 
-container div .more-info {
+#cards div .more-info {
   background-color: #f2f2f2;
   padding: 8px 20px;
   border: 2px solid #f2f2f2;
@@ -64,35 +64,35 @@ container div .more-info {
   transition: all .3s ease;
 }
 
-container div .more-info:hover {
+#cards div .more-info:hover {
   background-color: transparent;
   color: #f2f2f2 !important;
   cursor: pointer;
 }
 
-container div:nth-of-type(1) {
+#cards div:nth-of-type(1) {
   background-color: #e38826;
   border-radius: 12px 0 0 12px;
 }
 
-container div:nth-of-type(1) .more-info {
+#cards div:nth-of-type(1) .more-info {
   color: #e38826;
 }
 
-container div:nth-of-type(2) {
+#cards div:nth-of-type(2) {
   background-color: #006970;
 }
 
-container div:nth-of-type(2) .more-info {
+#cards div:nth-of-type(2) .more-info {
   color: #006970;
 }
 
-container div:nth-of-type(3) {
+#cards div:nth-of-type(3) {
   background-color: #004241;
   border-radius: 0 12px 12px 0;
 }
 
-container div:nth-of-type(3) .more-info {
+#cards div:nth-of-type(3) .more-info {
   color: #004241;
 }
 

@@ -31,7 +31,7 @@ body {
 }
 
 
-container {
+#cards {
     margin: 10% auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
